@@ -103,12 +103,12 @@ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 
 ```bash
-cd ~/catkin_ws/src
-git clone https://github.com/dk5824/guided_py
-cd guided_py
+git clone https://github.com/dk5824/ArduPilot_MAVROS
+cd ArduPilot_MAVROS
+mv guided_py ~/catkin_ws/src #move guided_py package to your workspace..
 
 # grant execute permission
-cd scripts
+cd ~/catkin_ws/src/guided_py/scripts
 chmod +x test_callback_functions.py
 chmod +x test_local_servoing.py
 
@@ -146,3 +146,11 @@ rosrun guided_py test_callback_functions.py
 
 ## Result
 ![Result](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F92AMQ%2FbtrValB3ztY%2FK5KgEmUWlA3qdtpmlnAZW1%2Fimg.png)
+
+
+## Result for running test_callback_functions node
+![Result](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdsvs4X%2FbtrVfrBphav%2FjvKgE5yt48aE5Cko5Wc5J1%2Fimg.png)
+
+
+## Links for overall test video about this package (click this thumbnail!)
+[![Video Label](http://img.youtube.com/vi/r29FpbyiQU0/0.jpg)](https://www.youtube.com/watch?v=r29FpbyiQU0)
