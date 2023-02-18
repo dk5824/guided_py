@@ -103,9 +103,8 @@ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 
 ```bash
-git clone https://github.com/dk5824/ArduPilot_MAVROS
-cd ArduPilot_MAVROS
-mv guided_py ~/catkin_ws/src #move guided_py package to your workspace..
+cd ~/catkin_ws/src
+git clone https://github.com/dk5824/guided_py
 
 # grant execute permission
 cd ~/catkin_ws/src/guided_py/scripts
